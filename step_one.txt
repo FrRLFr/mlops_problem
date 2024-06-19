@@ -1,0 +1,74 @@
+# Use Python as the programming language
+#• Use FastAPI to build the API
+#• Use SQLAlchemy to interact with a PostgreSQL database
+#• Use docker-compose to run FastAPI and the PostgreSQL database
+
+
+
+Notes: 
+	https://info.arxiv.org/help/api/user-manual.html#query_details
+	https://fastapi.tiangolo.com/advanced/testing-database/
+	https://medium.com/@agusmahari/docker-how-to-install-postgresql-using-docker-compose-d646c793f216
+	
+	
+run 
+conda 
+fastapi dev main.py
+
+
+docker install
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo docker run hello-world
+
+
+docker compose install already included above...
+sudo apt install docker-compose 
+
+wants sudo...
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
+might need reboot :|
+
+
+sudo chown root:docker /var/run/docker.sock
+
+sudo ln -s /usr/bin/docker-compose /usr/local/bin/docker-compose
+
+orm - object relational mapper
+https://github.com/grillazz/fastapi-sqlalchemy-asyncpg/blob/main/app/main.py
+https://github.com/DarkbordermanTemplate/fastapi-sqlalchemy/blob/master/api/config.py
+
+
+schemas in fast api are for getting expected data structure right
+async would be throughput or Failure considerations? 
+
+dbeaver to database different from docker to database
+
+engine in sqlalchemy is what gets db and app connected
+
+get is for browser...
+post e.g. done from terminal
+
+
+1. Operations
+2. Orchestration
+3. Reproducibilty
+4. Throughput performance bottlenecks
+5. Failure Redundancy
+6. Testing. Unit testing.
+7. Logging in code
+
+

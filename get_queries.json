@@ -1,0 +1,38 @@
+[
+    {
+        "query": "ArXiv Query: search_query=au:\\\"stray\\\"&amp;id_list=&amp;start=0&amp;max_results=8",
+        "query_timestamp": "2024-06-17T14:59:04",
+        "status": 200,
+        "num_results": 26
+    },
+    {
+        "query": "ArXiv Query: search_query=au:\\\"stecher\\\"&amp;id_list=&amp;start=0&amp;max_results=8",
+        "query_timestamp": "2024-06-17T14:59:48",
+        "status": 200,
+        "num_results": 63
+    },
+    {
+        "query": "ArXiv Query: search_query=au:\\\"mertens\\\"&amp;id_list=&amp;start=0&amp;max_results=8",
+        "query_timestamp": "2024-06-17T15:00:04",
+        "status": 200,
+        "num_results": 537
+    },
+    {
+        "query": "ArXiv Query: search_query=au:\\\"fritsch\\\"&amp;id_list=&amp;start=0&amp;max_results=8",
+        "query_timestamp": "2024-06-17T15:03:37",
+        "status": 200,
+        "num_results": 728
+    },
+    {
+        "query": "ArXiv Query: search_query=au:\\\"hibbins\\\"&amp;id_list=&amp;start=0&amp;max_results=8",
+        "query_timestamp": "2024-06-17T15:05:15",
+        "status": 200,
+        "num_results": 23
+    },
+    {
+        "query": "ArXiv Query: search_query=au:\\\"espy\\\"&amp;id_list=&amp;start=0&amp;max_results=8",
+        "query_timestamp": "2024-06-17T15:05:21",
+        "status": 200,
+        "num_results": 21
+    }
+]

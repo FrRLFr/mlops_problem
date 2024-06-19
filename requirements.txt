@@ -1,0 +1,15 @@
+asyncpg
+databases==0.8.0
+fastapi
+loguru
+feedparser
+requests
+sqlalchemy
+psycopg2-binary==2.9.9
+pydantic
+pydantic-core
+pydantic-settings
+pytest
+pytest_asyncio
+pytz
+typing-extensions
