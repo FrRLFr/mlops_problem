@@ -45,11 +45,6 @@ async def search_arxiv(max_query_results: int, request:arxivRequest =None):
     except requests.exceptions.RequestException as e:
         raise HTTPException(status_code=404, detail="No response from arvix")
         
-        
-    
-    #ordering
-    # handle emtpy result
-    # handle arxiv not avail
     
     # add OpenSearch specification to _FeedParserMixin.namespace under key 'opensearch', which defines a standard for
     # representing search results in RSS or Atom feeds

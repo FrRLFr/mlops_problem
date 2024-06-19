@@ -8,7 +8,6 @@ import json
 #from app.main import logger
 from loguru import logger
 
-# my stuff
 from app.api.crud import get_queries
 from app.api.models import queriesRequest
 
@@ -19,9 +18,6 @@ router = APIRouter()
 @router.post("/")
 async def json_from_db(request:queriesRequest): 
     logger.info(f"Queries post endpoint accessed")
-    #request_json = await request.json()
-    #query_timestamp_start = dt.strptime(request_json['query_timestamp_start'], "%Y-%m-%d %H:%M:%S" )
-    #query_timestamp_end = dt.strptime(request_json['query_timestamp_end'], "%Y-%m-%d %H:%M:%S")
     
     query_timestamp_start = dt.strptime(request.query_timestamp_start, "%Y-%m-%d %H:%M:%S" )
     query_timestamp_end = dt.strptime(request.query_timestamp_end, "%Y-%m-%d %H:%M:%S")
@@ -39,13 +35,9 @@ async def json_from_db(request:queriesRequest):
     
 
 
-@router.get("/")#, response_model=queryResultDB, status_code=200) ## query would wind up here B-)
-#def search_arxiv(max_query_results: int, your_custom_query: Union[str, None] = None, request: arxivRequest):
+@router.get("/")
 async def queries_file(request:queriesRequest): 
     logger.info(f"Queries get endpoint accessed")
-    #request_json = await request.json()
-    #query_timestamp_start = dt.strptime(request_json['query_timestamp_start'], "%Y-%m-%d %H:%M:%S" )
-    #query_timestamp_end = dt.strptime(request_json['query_timestamp_end'], "%Y-%m-%d %H:%M:%S")
     
     query_timestamp_start = dt.strptime(request.query_timestamp_start, "%Y-%m-%d %H:%M:%S" )
     query_timestamp_end = dt.strptime(request.query_timestamp_end, "%Y-%m-%d %H:%M:%S")

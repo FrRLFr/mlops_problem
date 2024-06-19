@@ -1,5 +1,4 @@
 
-from loguru import logger
 
 from datetime import datetime 
 from sqlalchemy import func
@@ -36,7 +35,7 @@ async def get_queries(query_timestamp_start: str, query_timestamp_end):
                 query_results.c.num_results)\
         .where((query_results.c.query_timestamp >= query_timestamp_start) \
             & (query_results.c.query_timestamp <= query_timestamp_end))\
-        .order_by(query_results.c.query_timestamp) ##!!! storage timestamp??
+        .order_by(query_results.c.query_timestamp) 
     
     return await database.fetch_all(query=query) 
     

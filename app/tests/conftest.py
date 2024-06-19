@@ -1,7 +1,5 @@
 import pytest
 import asyncio
-#from pytest import pytest_asyncio
-#pytest_plugins = ('pytest_asyncio',)
 
 
 from fastapi.testclient import TestClient

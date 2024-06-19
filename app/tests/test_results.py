@@ -6,7 +6,6 @@ from app.main import app
 from app.db import database
 
 
-#client=TestClient(app)
 
 @pytest.mark.asyncio
 #@pytest.mark.webtest
