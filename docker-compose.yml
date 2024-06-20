@@ -47,6 +47,6 @@ volumes:
   postgres_data:
     name: postgres_data
     
-networks:
-  default: 
-    name: hello_ml
+#networks:
+#  default: 
+#    name: hello_ml
