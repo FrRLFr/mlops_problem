@@ -1,8 +1,8 @@
 
-# core tasks
+# Core tasks
 
-the required apis are given in their respective api python files. to run, one should ensure to have a working docker installation. in case of troubleshooting, maybe some of the notes in notes.txt could help. 
-to run the application, one can apply in the terminal in the base directory  
+The required apis are given in their respective api python files. to run, one should ensure to have a working docker installation. in case of troubleshooting, maybe some of the notes in the messy notes section could help.
+To run the application, one can apply in the terminal in the base directory  
 
     docker-compose build
     docker-compose up -d
@@ -56,7 +56,7 @@ A log file is found in the main container directory and Http exceptions are rise
 
 
 
-### Messy process notes
+# Messy process notes
 
     python3 -m venv .venv
     source .venv/bin/activate
